@@ -1,0 +1,199 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #212121;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-image: url("../img/bg.webp");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+@media screen and (min-width: 2000px) {
+  main {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main {
+    background-position: top center;
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  height: auto;
+}
+
+.hero_information,
+.hero_links {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .hero_information,
+  .hero_links {
+    width: 100%;
+  }
+}
+
+.hero_information img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.hero_information h1 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 42px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  line-height: 50px;
+  max-width: 450px;
+}
+.hero_information h1 span {
+  font-weight: bold;
+  color: #eb3850;
+}
+.hero_information ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 15px;
+  margin: 30px 0;
+}
+@media screen and (max-width: 500px) {
+  .hero_information ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.hero_information ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero_information ul li span {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+}
+.hero_information a {
+  display: inline-block;
+  background-color: #eb3850;
+  font-size: 22px;
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px 60px;
+  border-radius: 50px;
+  transition: opacity 0.3s linear;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media screen and (max-width: 500px) {
+  .hero_information a {
+    padding: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+  }
+}
+.hero_information a:hover {
+  opacity: 0.8;
+}
+
+.hero_information_description {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.hero_links .container {
+  display: grid;
+  grid-template-columns: 1fr; /* Coluna única para o botão maior */
+  gap: 20px; /* Espaçamento entre os itens */
+  padding: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .hero_links .container {
+    padding: 0;
+  }
+}
+.hero_links .animation_main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.hero_links .animation_main h2 {
+  padding: 10px 0;
+  font-size: 26px;
+}
+.hero_links .animation_main p {
+  font-size: 16px;
+}
+.hero_links .secondary-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas para os botões menores */
+  gap: 20px;
+}
+@media screen and (max-width: 500px) {
+  .hero_links .secondary-buttons {
+    grid-template-columns: 1fr; /* Coluna única para o botão maior */
+  }
+}
+.hero_links .background_animation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 4.329px 5.412px 0px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.hero_links .animation_main:hover .background_animation {
+  background: rgba(255, 255, 255, 0.2);
+}
+.hero_links .content_card {
+  position: relative;
+  z-index: 1;
+}/*# sourceMappingURL=style.css.map */
