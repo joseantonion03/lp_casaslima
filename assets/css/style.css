@@ -196,4 +196,20 @@ main {
 .hero_links .content_card {
   position: relative;
   z-index: 1;
+}
+
+.developer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.developer a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.2s linear;
+  font-size: 0.9rem;
+}
+.developer a:hover {
+  color: #f5e4e6;
 }/*# sourceMappingURL=style.css.map */

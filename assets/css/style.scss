@@ -185,3 +185,21 @@ main {
     z-index: 1;
   }
 }
+
+.developer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.2s linear;
+    font-size: 0.9rem;
+
+    &:hover{
+      color: #f5e4e6;
+    }
+  }
+}
